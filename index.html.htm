@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zubair Jamil | Freelance Digital Marketer & Social Media Management Expert</title>
+
+<link rel="icon" type="image/png" href="https://i.ibb.co/kgPWX8gS/1778396176490-removebg-preview.png">
+
+<meta name="description" content="Scale your business with Zubair Jamil, a top-rated performance marketer specializing in Facebook ads, Meta Pixel setup, Snapchat marketing, Pinterest SEO, and YouTube automation campaigns." />
+<meta name="keywords" content="digital marketer, social media management expert, Facebook ads campaign setup, Meta pixel configuration, Snapchat ads expert, Pinterest organic traffic, YouTube channel automation, freelance digital marketer" />
+<meta name="author" content="Zubair Jamil" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#050811;
+    --glass:rgba(14,22,45,.45);
+    --blue:#00d2ff;
+    --purple:#7f00ff;
+    --white:#ffffff;
+    --muted:#8b9bb4;
+    --border:rgba(0,210,255,.15);
+    --shadow:0 20px 50px rgba(0,0,0,.5);
+    --radius:24px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Plus Jakarta Sans',sans-serif;
+    background:var(--bg);
+    color:var(--white);
+    line-height:1.6;
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* Background Grid Framework */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
+    background-size:40px 40px;
+    z-index:-3;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:700px;
+    height:700px;
+    background:radial-gradient(circle, rgba(0,210,255,.12), transparent 70%);
+    top:-200px;
+    right:-150px;
+    z-index:-2;
+    pointer-events: none;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+section{
+    padding:80px 7%;
+}
+
+.glass{
+    background:var(--glass);
+    backdrop-filter:blur(20px);
+    border:1px solid var(--border);
+    box-shadow:var(--shadow);
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index:999;
+    backdrop-filter:blur(18px);
+    background:rgba(5,8,17,.8);
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.logo{
+    font-weight:800;
+    letter-spacing:1px;
+    font-size:14px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    align-items: center;
+}
+
+.nav-links a{
+    color:var(--muted);
+    transition:.3s ease;
+    font-size:13px;
+    font-weight: 600;
+}
+
+.nav-links a:hover{
+    color:var(--blue);
+}
+
+/* Dynamic Social Icon Grid System */
+.header-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.mini-social-btn {
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.mini-social-btn:hover {
+    color: var(--blue);
+    border-color: var(--blue);
+    background: rgba(0,210,255,0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,210,255,0.15);
+}
+
+/* HERO AREA */
+.hero{
+    min-height:90vh;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:40px;
+    align-items:center;
+    padding-top:140px;
+    padding-bottom:40px;
+}
+
+.hero-content h1{
+    font-size:clamp(34px,4.8vw,62px);
+    line-height:1.15;
+    font-weight:800;
+    margin-bottom:24px;
+}
+
+.gradient-text{
+    background:linear-gradient(90deg,var(--blue),var(--purple));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-sub{
+    color:var(--muted);
+    font-size:18px;
+    margin-bottom:24px;
+}
+
+.hero-desc{
+    color:var(--muted);
+    max-width:720px;
+    margin-bottom:40px;
+}
+
+.hero-actions{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    padding:16px 28px;
+    border-radius:100px;
+    transition:.35s cubic-bezier(0.25, 1, 0.5, 1);
+    font-weight:600;
+    font-size:14px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.primary-btn{
+    background:var(--blue);
+    color:#000;
+    box-shadow:0 0 40px rgba(0,210,255,.45);
+}
+
+.primary-btn:hover{ transform:translateY(-4px); box-shadow:0 0 50px rgba(0,210,255,.6); }
+
+.secondary-btn{
+    border:1px solid rgba(255,255,255,.2);
+    color:var(--white);
+}
+
+.secondary-btn:hover{
+    border-color:var(--blue);
+    box-shadow:0 0 30px rgba(0,210,255,.25);
+    transform:translateY(-4px);
+}
+
+/* HERO VISUAL SYSTEM WITH ENHANCED BACKDROP GRAPHICS */
+.hero-visual-wrap {
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    width:100%;
+    position:relative;
+}
+
+.hero-img-box {
+    width:100%;
+    height:460px;
+    border-radius:var(--radius);
+    overflow:hidden;
+    border:1px solid rgba(0,210,255,0.25);
+    position:relative;
+    box-shadow: 0 0 50px rgba(0, 210, 255, 0.15);
+    background: radial-gradient(circle at center, #0f1a36 0%, #050811 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Marketing Icons Framework Mesh with 50% Visibility */
+.marketing-backdrop-mesh {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0.50;
+    filter: blur(5px);
+}
+
+.bg-icon {
+    position: absolute;
+    font-weight: 800;
+    color: var(--blue);
+    font-size: 28px;
+    user-select: none;
+}
+.icon-meta  { top: 15%; left: 12%; transform: rotate(-15deg); }
+.icon-ads   { top: 25%; right: 15%; transform: rotate(20deg); font-size: 36px; color: var(--purple); }
+.icon-seo   { bottom: 35%; left: 8%; transform: rotate(-10deg); }
+.icon-roas  { bottom: 20%; right: 12%; transform: rotate(15deg); font-size: 32px; }
+.icon-chart { top: 50%; left: 45%; transform: rotate(5deg); font-size: 40px; }
+
+.hero-img-box img {
+    width: 88%;
+    height: 98%;
+    object-fit: contain;
+    object-position: bottom center;
+    z-index: 2;
+    image-rendering: -webkit-optimize-contrast;
+    filter: drop-shadow(0 15px 30px rgba(0,210,255,0.25));
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.hero-img-box:hover img {
+    transform: scale(1.025);
+}
+
+/* METRIC RENDERER */
+.metric-card{
+    padding:35px 40px;
+    border-radius:var(--radius);
+    position:relative;
+    overflow:hidden;
+}
+
+.metric-number{
+    font-size:clamp(50px,6vw,90px);
+    font-weight:800;
+    line-height:1;
+    color:var(--blue);
+}
+
+/* BRAND TRUST MARQUEE SYSTEM */
+.trusted-marquee-wrapper {
+    width: 100%;
+    padding: 10px 0 55px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.trusted-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0.85;
+}
+
+.marquee-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+}
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    animation: scrollMarquee 26s linear infinite;
+    white-space: nowrap;
+}
+
+.marquee-track img {
+    height: 68px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.95;
+    transition: all 0.3s ease;
+}
+
+.marquee-track img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+@keyframes scrollMarquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 42.5px)); }
+}
+
+/* GRID SYSTEM WITH INTERACTIVE PC HOVER ANIMATIONS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    padding:24px;
+    border-radius:24px;
+    position:relative;
+    overflow:hidden;
+    transition:all .4s cubic-bezier(0.25, 1, 0.5, 1);
+    display:flex;
+    flex-direction:column;
+    border:1px solid var(--border);
+}
+
+.service-card:hover{
+    border-color:var(--blue);
+    transform:translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,210,255,0.12);
+}
+
+/* Card Badges */
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 210, 255, 0.15);
+    color: var(--blue);
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 5;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+/* SPEED-OPTIMIZED SLIDER INFRASTRUCTURE */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.3);
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
+}
+
+.slider-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    background: #121829;
+    cursor: pointer;
+}
+
+.slider-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: -webkit-optimize-contrast;
+    transition: transform 0.3s ease;
+}
+
+.slider-slide:hover img {
+    transform: scale(1.03);
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background: rgba(5, 8, 17, 0.85);
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 10;
+    user-select: none;
+    transition: 0.2s ease;
+}
+
+.slider-nav:hover {
+    background: var(--blue);
+    color: #000;
+    box-shadow: 0 0 15px var(--blue);
+}
+
+.slider-prev { left: 10px; }
+.slider-next { right: 10px; }
+
+.service-card h3{
+    font-size:22px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+/* PORTFOLIO SPECIFIC POINTS (TICKS STYLE) */
+.service-points {
+    list-style: none;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.service-points li {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-points li::before {
+    content: "✓";
+    color: var(--blue);
+    font-weight: 800;
+    font-size: 15px;
+}
+
+/* PORTFOLIO LIGHTBOX VIEW SYSTEM (POPUP WITH OPTIMIZED DURATION) */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    inset: 0;
+    background: rgba(5, 8, 17, 0.9);
+    backdrop-filter: blur(12px);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.15s linear;
+}
+
+.lightbox-modal.active {
+    opacity: 1;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 16px;
+    box-shadow: 0 0 60px rgba(0, 210, 255, 0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+    transform: scale(0.97);
+    transition: transform 0.15s ease-out;
+}
+
+.lightbox-modal.active .lightbox-content {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.2s ease;
+    user-select: none;
+}
+
+.lightbox-close:hover {
+    color: var(--blue);
+    transform: scale(1.1);
+}
+
+/* MARQUEE BRAND MODULE */
+.brand-marquee {
+    margin-top: 15px;
+    padding: 12px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 12px;
+    border: 1px dashed rgba(255,255,255,0.1);
+}
+.brand-title-mini {
+    font-size: 11px;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+.brand-list {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+/* COMPETENCIES SYSTEM STYLE */
+.skills-grid{ 
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px; 
+}
+.skill-card{ padding:24px; border-radius:20px; transition: transform 0.3s ease; }
+.skill-card:hover { transform: translateY(-3px); }
+.skill-top{ display:flex; justify-content:space-between; margin-bottom:12px; }
+.progress{ height:8px; background:rgba(255,255,255,.05); border-radius:100px; overflow:hidden; }
+.progress-fill{ height:100%; border-radius:100px; background:linear-gradient(90deg,var(--blue),var(--purple)); }
+
+/* TOOLS INTEGRATION SYSTEM styling */
+.tools-section {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+.tool-category-card {
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: rgba(14, 22, 45, 0.25);
+    transition: 0.3s ease;
+}
+.tool-category-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-2px);
+}
+.tool-category-card h4 {
+    font-size: 16px;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.tool-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tool-tags-list span {
+    padding: 8px 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white);
+    transition: 0.2s ease;
+}
+.tool-tags-list span:hover {
+    background: rgba(0, 210, 255, 0.1);
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+/* LEAD CONTACT TERMINALS */
+.contact-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+.contact-panel, .form-panel{ padding:40px; border-radius:30px; }
+.social-matrix { margin-top:20px; display:grid; grid-template-columns:repeat(auto-fit, minmax(110px, 1fr)); gap:10px; }
+.matrix-btn { display:flex; align-items:center; justify-content:center; gap:8px; padding:12px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.06); border-radius:16px; font-size:12px; font-weight:600; transition:0.3s cubic-bezier(0.25, 1, 0.5, 1); }
+.matrix-btn:hover { background:rgba(0,210,255,0.08); border-color:var(--blue); transform:translateY(-3px); color:var(--blue); box-shadow: 0 10px 20px rgba(0,210,255,0.15); }
+.badge{ display:inline-flex; align-items:center; gap:10px; margin-top:20px; padding:12px 18px; border-radius:100px; background:rgba(0,210,255,.08); border:1px solid rgba(0,0,0,0.2); color:var(--blue); font-size:13px; }
+
+.form-group{ margin-bottom:16px; }
+input, textarea{ width:100%; padding:16px 18px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); border-radius:16px; color:var(--white); font-family:inherit; font-size:14px; }
+input:focus, textarea:focus { outline:1px solid var(--blue); }
+
+.submit-btn{ width:100%; padding:16px; border:none; border-radius:16px; background:linear-gradient(90deg,var(--blue),var(--purple)); color:#fff; font-weight:700; cursor:pointer; font-size:14px; letter-spacing:0.5px; transition: 0.3s ease; }
+.submit-btn:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,210,255,0.2); }
+
+/* Form Alert Status Visuals */
+#form-result { margin-top: 15px; font-size: 14px; font-weight: 600; text-align: center; display: none; }
+#form-result.success { color: #00ffcc; }
+#form-result.error { color: #ff3366; }
+
+/* RE-ENGINEERED COMPACT FOOTER DESIGN */
+footer{ 
+    padding:50px 7% 30px 7%; 
+    border-top:1px solid rgba(255,255,255,.06); 
+    color:var(--muted); 
+    background: #03050b;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-info {
+    font-size: 14px;
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.footer-info a {
+    transition: color 0.2s ease;
+}
+.footer-info a:hover {
+    color: var(--blue);
+}
+.footer-note {
+    font-size: 13px;
+    max-width: 600px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+.footer-copyright {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+/* SYSTEM RESPONSIVE QUERIES */
+@media(max-width:1100px){
+    .hero, .contact-wrap{ grid-template-columns:1fr; }
+    .hero{ gap:25px; text-align:center; padding-top:130px; }
+    .hero-actions { justify-content:center; }
+    .hero-img-box { height:380px; }
+}
+@media(max-width:780px) {
+    section { padding:60px 5%; }
+    nav { 
+        padding:12px 5%; 
+        flex-direction:column; 
+        gap:12px;
+        position: relative;
+    }
+    .logo { font-size: 12px; text-align: center; }
+    .nav-links { 
+        width:100%; 
+        display:flex; 
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:15px; 
+    }
+    .header-socials {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .mini-social-btn {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .hero { padding-top: 40px; }
+    .hero-img-box { height:320px; }
+    .marquee-track { gap: 50px; }
+    .marquee-track img { height: 48px; }
+    .lightbox-close { top: 15px; right: 20px; font-size: 35px; }
+    .footer-info { flex-direction: column; gap: 12px; align-items: center; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">ZUBAIR JAMIL | DIGITAL MARKETING EXPERT</div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#skills">SEO</a>
+        <a href="#contact">Contact</a>
+    </div>
+    
+    <div class="header-socials">
+        <a href="https://www.linkedin.com/in/zubairansari1/" target="_blank" rel="noopener" class="mini-social-btn">LinkedIn</a>
+        <a href="https://www.instagram.com/fluentmediamarketing1/" target="_blank" rel="noopener" class="mini-social-btn">Instagram</a>
+        <a href="https://www.facebook.com/fluentmediamarketing/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" rel="noopener" class="mini-social-btn">Facebook</a>
+        <a href="https://www.fiverr.com/error_op6?public_mode=true" target="_blank" rel="noopener" class="mini-social-btn">Fiverr</a>
+        <a href="https://www.upwork.com/freelancers/~01550320a84c1d5a2c?mp_source=share" target="_blank" rel="noopener" class="mini-social-btn">Upwork</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Hire an Expert <span class="gradient-text">Digital Marketer</span> & Social Media Management Specialist</h1>
+        <p class="hero-sub">Maximize your brand value, execute professional Facebook ads campaigns, and dominate targeted ad channels.</p>
+        <p class="hero-desc">I specialize in high-converting ad setup management, organic traffic growth engines, and structural pixel verifications to help global ecommerce and clothing lines maximize conversion values.</p>
+        <div class="hero-actions">
+            <a href="#services" class="primary-btn">VIEW AD PORTFOLIO</a>
+            <a href="#contact" class="secondary-btn">REQUEST A STRATEGY CALL</a>
+        </div>
+    </div>
+
+    <div class="hero-visual-wrap">
+        <div class="hero-img-box">
+            <div class="marketing-backdrop-mesh">
+                <div class="bg-icon icon-meta">Meta</div>
+                <div class="bg-icon icon-ads">ADS</div>
+                <div class="bg-icon icon-seo">SEO</div>
+                <div class="bg-icon icon-roas">ROAS</div>
+                <div class="bg-icon icon-chart">📈</div>
+            </div>
+            <img src="https://i.ibb.co/kgPWX8gS/1778396176490-removebg-preview.png" alt="Zubair Jamil - Professional Freelance Digital Marketer and Facebook Ads Performance Expert">
+        </div>
+        <div class="metric-card glass">
+            <div class="metric-number">150+</div>
+            <h2>SUCCESSFULLY DELIVERED PROJECTS</h2>
+            <p style="color:var(--muted); font-size:14px; margin-top:10px;">Providing premium digital marketing and social media account management on Fiverr, Upwork, and global remote contracts.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services" style="padding-top: 10px;">
+    
+    <div class="trusted-marquee-wrapper">
+        <div class="trusted-title">Trusted By Leading Global Brands & Businesses</div>
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <img src="https://i.ibb.co/8gWLXXJP/IDD-Resource-Guide-Logo.png" alt="IDD Resource Guide Logo">
+                <img src="https://i.ibb.co/zWgQhj5V/KIDS-HI.png" alt="KIDS HI Logo">
+                <img src="https://i.ibb.co/zhMJwh0b/Luxury-Rentals.png" alt="Luxury Rentals Logo">
+                <img src="https://i.ibb.co/Q3DqNrGp/Sunflower-Community-Logo-wt.png" alt="Sunflower Community Logo">
+                <img src="https://i.ibb.co/WWVNhy8v/HOB-BRAND-LOGO-PNG.png" alt="HOB Brand Logo">
+                <img src="https://i.ibb.co/n8YWYGMQ/ciy-brand-logo.png" alt="CIY Brand Logo">
+                
+                <img src="https://i.ibb.co/8gWLXXJP/IDD-Resource-Guide-Logo.png" alt="IDD Resource Guide Logo">
+                <img src="https://i.ibb.co/zWgQhj5V/KIDS-HI.png" alt="KIDS HI Logo">
+                <img src="https://i.ibb.co/zhMJwh0b/Luxury-Rentals.png" alt="Luxury Rentals Logo">
+                <img src="https://i.ibb.co/Q3DqNrGp/Sunflower-Community-Logo-wt.png" alt="Sunflower Community Logo">
+                <img src="https://i.ibb.co/WWVNhy8v/HOB-BRAND-LOGO-PNG.png" alt="HOB Brand Logo">
+                <img src="https://i.ibb.co/n8YWYGMQ/ciy-brand-logo.png" alt="CIY Brand Logo">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">High-Performance Digital Marketing Services</h2>
+    <p class="section-desc">Explore optimized channel management solutions engineered to scale traffic channels, improve brand layout structures, and increase cross-platform conversion metrics.</p>
+
+    <div class="grid">
+        
+        <div class="service-card glass">
+            <div class="card-badge">Creative Assets</div>
+            <div class="slider-wrapper">
+                <div class="slider-nav slider-prev" onclick="moveSlider(this, -1)">&#10094;</div>
+                <div class="slider-nav slider-next" onclick="moveSlider(this, 1)">&#10095;</div>
+                <div class="slider-container">
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/VpWcNxgN/content-creation-3-4-11zon.jpg" loading="lazy" alt="High Conversion Commercial Visual Asset Creation Grid"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/1fsnRb0H/content-creation-2-3-11zon.jpg" loading="lazy" alt="Corporate Social Media Strategy and Copywriting Brand Asset"></div>
+                </div>
+            </div>
+            <h3>Content Creation</h3>
+            <ul class="service-points">
+                <li>High-Converting Ad Creatives Design</li>
+                <li>Professional Social Media Post Layouts</li>
+                <li>Engaging Copywriting & Strategy</li>
+                <li>Premium Visual Theme Management</li>
+            </ul>
+        </div>
+
+        <div class="service-card glass">
+            <div class="card-badge">Meta Campaigns</div>
+            <div class="slider-wrapper">
+                <div class="slider-nav slider-prev" onclick="moveSlider(this, -1)">&#10094;</div>
+                <div class="slider-nav slider-next" onclick="moveSlider(this, 1)">&#10095;</div>
+                <div class="slider-container">
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/4RXCgnV8/Artboard-2-2-11zon.jpg" loading="lazy" alt="Meta Premium Corporate Asset Management Setup Portfolio"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/Nn39QqkC/Artboard-3-3-11zon.jpg" loading="lazy" alt="Facebook Business Suite Automation Schedules Dashboard"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/GQ8ZLSvP/Artboard-5-5-11zon.jpg" loading="lazy" alt="Meta Conversion Ads Pipeline Configuration Funnel Layout"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/6KB6qPY/Artboard-6-6-11zon.jpg" loading="lazy" alt="Advanced Audience Targeting & ROAS Tracking Blueprint Metrics"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/rBCXm4s/Artboard-9-2-11zon.jpg" loading="lazy" alt="Meta Analytics and Conversions Reporting Control Studio"></div>
+                </div>
+            </div>
+            <h3>Facebook Page Setup & Ads</h3>
+            <ul class="service-points">
+                <li>Professional Business Page Optimization</li>
+                <li>Meta Business Suite & Manager Layout Setup</li>
+                <li>Targeted Conversion Ads Configuration</li>
+                <li>Pixel Deployment & Retargeting Funnels</li>
+                <li>Detailed Campaign Performance Reporting</li>
+            </ul>
+        </div>
+
+        <div class="service-card glass">
+            <div class="card-badge" style="background: #ff3366; color: #fff; border-color: #ff3366;">Case Study</div>
+            <div class="slider-wrapper">
+                <div class="slider-nav slider-prev" onclick="moveSlider(this, -1)">&#10094;</div>
+                <div class="slider-nav slider-next" onclick="moveSlider(this, 1)">&#10095;</div>
+                <div class="slider-container">
+                    <div class="slider-slide" onclick="openLightbox(this)">
+                        <img src="https://i.ibb.co/mrKkgQYd/Artboard-7.png" loading="lazy" alt="Meta Sales Ads Performance Dashboard for RB Shawls by Zubair Jamil">
+                    </div>
+                </div>
+            </div>
+            <h3>Meta Sales Ads (RB Shawls)</h3>
+            <ul class="service-points">
+                <li>97 Optimization Score Achieved on Meta Dashboard</li>
+                <li>High-Converting E-commerce Sales Funnel Setup</li>
+                <li>Hyper-Targeted Audience & Interest Testing</li>
+                <li>Budget Optimization with Minimal Ad Spend Waste</li>
+                <li>Low Cost-Per-Result Optimization for Apparel Brand</li>
+            </ul>
+            <div class="brand-marquee" style="margin-top: auto;">
+                <div class="brand-title-mini">Niche / Industry</div>
+                <div class="brand-list">👗 Premium Apparel & Clothing</div>
+            </div>
+        </div>
+
+        <div class="service-card glass">
+            <div class="card-badge" style="background: #95bf47; color: #000; border-color: #95bf47;">E-com Architecture</div>
+            <div class="slider-wrapper">
+                <div class="slider-nav slider-prev" onclick="moveSlider(this, -1)">&#10094;</div>
+                <div class="slider-nav slider-next" onclick="moveSlider(this, 1)">&#10095;</div>
+                <div class="slider-container">
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/Myrkr89S/grealwear-myshopify-com-1-11zon.jpg" loading="lazy" alt="Shopify Store Premium Interface Mockup Execution"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/5WxhJ9S2/grealwear-myshopify-com-pb-0-1-4-11zon.jpg" loading="lazy" alt="Shopify Checkout Interface Pipeline Optimization"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/KpBd4j2p/grealwear-myshopify-com-pb-0-5-11zon.jpg" loading="lazy" alt="Secure Gateway Orders Custom Verification Modules"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/qLJYZBVV/grealwear-myshopify-com-products-3-pcs-gradient-water-bottles-set-for-gym-hydration-1-2-11zon.jpg" loading="lazy" alt="Conversion Engine Optimized Product Page Layout"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/JFbgm2DQ/grealwear-myshopify-com-products-3-pcs-gradient-water-bottles-set-for-gym-hydration-3-11zon.jpg" loading="lazy" alt="Dynamic Inventory and Cart Addition Layout Panels"></div>
+                </div>
+            </div>
+            <h3>Shopify Store Architecture & Custom Coding</h3>
+            <ul class="service-points">
+                <li>End-to-End Premium Shopify Store Development & Layout Setup</li>
+                <li>Custom Liquid Code Implementation for Advanced Brand Features</li>
+                <li>Dynamic Fake Viewer Alerts (e.g., "30 people are watching") to Trigger FOMO Sales</li>
+                <li>Custom System Notification Triggers & Tailored Order Automation</li>
+                <li>Conversion-Rate Optimized (CRO) Responsive Product Pages Layouts</li>
+            </ul>
+            <div class="brand-marquee" style="margin-top: auto;">
+                <div class="brand-title-mini">Tech Stack & Framework</div>
+                <div class="brand-list">🛍️ Shopify Liquid, JS, Custom Alerts</div>
+            </div>
+        </div>
+
+        <div class="service-card glass">
+            <div class="card-badge" style="background: #00d2ff; color: #000; border-color: #00d2ff;">Live Production</div>
+            
+            <div style="width:100%; height:120px; background: linear-gradient(135deg, #0e162d 0%, #050811 100%); border-radius:16px; margin-bottom:20px; border:1px solid rgba(0,210,255,0.15); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;">
+                <span style="font-size:28px;">👑</span>
+                <span style="font-size:13px; font-weight:700; color:var(--blue); letter-spacing:1px;">castlerock.pk</span>
+            </div>
+
+            <h3>Castle Rock Luxury E-commerce</h3>
+            <ul class="service-points">
+                <li>End-to-End Luxury Brand Identity & Live Store Deployment</li>
+                <li>Premium Minimalist Layout Structure Engineered for High-Ticket Products</li>
+                <li>Immersive Visual Storytelling for Handcrafted Chess Sets & Elite Decor</li>
+                <li>High-Speed Interactive Catalog Navigation with Premium Filtering</li>
+                <li>Seamless, High-Security Checkout Funnel Optimized for Scalable Orders</li>
+            </ul>
+            
+            <div class="brand-marquee" style="margin-top: auto; margin-bottom: 15px;">
+                <div class="brand-title-mini">Niche / Industry</div>
+                <div class="brand-list">♟️ Luxury Chess Sets & Premium Home Decor</div>
+            </div>
+
+            <a href="https://castlerock.pk/" target="_blank" rel="noopener" class="secondary-btn" style="padding:10px 15px; font-size:12px; width:100%; text-align:center;">
+                LAUNCH LIVE LUXURY STORE ↗
+            </a>
+        </div>
+
+        <div class="service-card glass">
+            <div class="card-badge">Video Growth</div>
+            <div class="slider-wrapper">
+                <div class="slider-nav slider-prev" onclick="moveSlider(this, -1)">&#10094;</div>
+                <div class="slider-nav slider-next" onclick="moveSlider(this, 1)">&#10095;</div>
+                <div class="slider-container">
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/YTb3GbrS/Artboard-10-3-11zon.jpg" loading="lazy" alt="High-CTR Custom Video Thumbnail Engineering System Graphics"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/xSBgym69/Artboard-11-4-11zon.jpg" loading="lazy" alt="YouTube Search Engine Indexing and Tags Pipeline Workspace"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/RknjT123/Artboard-12-5-11zon.jpg" loading="lazy" alt="YouTube Studio Optimization Layout Matrix Panel"></div>
+                </div>
+            </div>
+            <h3>YouTube Channel</h3>
+            <ul class="service-points">
+                <li>Complete Channel Optimization Setup</li>
+                <li>High Click-Through-Rate (CTR) Thumbnails</li>
+                <li>Strategic Keyword Tags & SEO Indexing</li>
+                <li>Video Description & Algorithm Alignment</li>
+            </ul>
+        </div>
+
+        <div class="service-card glass">
+            <div class="card-badge">Organic SEO</div>
+            <div class="slider-wrapper">
+                <div class="slider-nav slider-prev" onclick="moveSlider(this, -1)">&#10094;</div>
+                <div class="slider-nav slider-next" onclick="moveSlider(this, 1)">&#10095;</div>
+                <div class="slider-container">
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/7dZfnfWm/Artboard-13-6-11zon.jpg" loading="lazy" alt="Visual Pin Design and Keyword Rich Organic Indexing Engine"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/dstC71Xv/Artboard-14-7-11zon.jpg" loading="lazy" alt="Pinterest Board Configuration and Category Keyword Structuring"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/dsgCqH10/Artboard-15-8-11zon.jpg" loading="lazy" alt="Ecommerce Direct Traffic Conversion Pins Scale Management"></div>
+                </div>
+            </div>
+            <h3>Pinterest SEO</h3>
+            <ul class="service-points">
+                <li>Pinterest Business Account Setup</li>
+                <li>Keyword-Rich Pin Modification & Graphics</li>
+                <li>Search-Optimized Board Architecture</li>
+                <li>Direct Organic Web Traffic Funneling</li>
+            </ul>
+        </div>
+
+        <div class="service-card glass">
+            <div class="card-badge">Brand Aesthetics</div>
+            <div class="slider-wrapper">
+                <div class="slider-nav slider-prev" onclick="moveSlider(this, -1)">&#10094;</div>
+                <div class="slider-nav slider-next" onclick="moveSlider(this, 1)">&#10095;</div>
+                <div class="slider-container">
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/4RHb626h/Account-optimization-3-2-11zon.jpg" loading="lazy" alt="Instagram Professional Grid Configuration and Bio-Link Funnels"></div>
+                    <div class="slider-slide" onclick="openLightbox(this)"><img src="https://i.ibb.co/390JK6HV/Artboard-8-1-11zon.jpg" loading="lazy" alt="Corporate Instagram Layout Brand Identity Structuring Workspace"></div>
+                </div>
+            </div>
+            <h3>Instagram Account Setup</h3>
+            <ul class="service-points">
+                <li>Professional Grid Theme Curation</li>
+                <li>High-Converting Bio Setup & Optimization</li>
+                <li>Business/Creator Asset Configuration</li>
+                <li>Unified Linking & Lead Generation Setup</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<div class="lightbox-modal" id="portfolioLightbox" onclick="closeLightbox(event)">
+    <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+    <img class="lightbox-content" id="lightboxImage" src="" alt="Full Scale Portfolio Project View">
+</div>
+
+<section id="skills">
+    <h2 class="section-title">Core Performance Marketing Competencies</h2>
+    <p class="section-desc" style="color:var(--muted); margin-bottom: 30px;">Data-driven methodologies and technical execution systems engineered to optimize acquisition costs and maximize brand revenue.</p>
+    
+    <div class="skills-grid">
+        <div class="skill-card glass">
+            <div class="skill-top"><h4>Meta Ads Management & ROAS Scaling</h4><span>96%</span></div>
+            <div class="progress"><div class="progress-fill" style="width:96%"></div></div>
+        </div>
+        <div class="skill-card glass">
+            <div class="skill-top"><h4>Meta Pixel & Conversions API (CAPI) Setup</h4><span>94%</span></div>
+            <div class="progress"><div class="progress-fill" style="width:94%"></div></div>
+        </div>
+        <div class="skill-card glass">
+            <div class="skill-top"><h4>Organic Search Engine Optimization (Pinterest & YouTube)</h4><span>92%</span></div>
+            <div class="progress"><div class="progress-fill" style="width:92%"></div></div>
+        </div>
+        <div class="skill-card glass">
+            <div class="skill-top"><h4>E-commerce Conversion Rate Optimization (CRO)</h4><span>89%</span></div>
+            <div class="progress"><div class="progress-fill" style="width:89%"></div></div>
+        </div>
+        <div class="skill-card glass">
+            <div class="skill-top"><h4>A/B Testing & Audience Hyper-Targeting</h4><span>95%</span></div>
+            <div class="progress"><div class="progress-fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill-card glass">
+            <div class="skill-top"><h4>Creative Ad Strategy & Copywriting</h4><span>91%</span></div>
+            <div class="progress"><div class="progress-fill" style="width:91%"></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="tools-section" id="tools">
+    <h2 class="section-title">Tools & Frameworks I Master</h2>
+    <p class="section-desc" style="color:var(--muted); margin-bottom: 10px;">A professional execution ecosystem combined with state-of-the-art analytical engines and asset creation toolkits to maximize conversion rates.</p>
+    
+    <div class="tools-grid">
+        <div class="tool-category-card glass">
+            <h4>Scheduling & Automation</h4>
+            <div class="tool-tags-list">
+                <span>Buffer</span>
+                <span>Hootsuite</span>
+                <span>Meta Business Suite</span>
+                <span>Mailchimp</span>
+            </div>
+        </div>
+        <div class="tool-category-card glass">
+            <h4>Graphic & Creative UI</h4>
+            <div class="tool-tags-list">
+                <span>Adobe Photoshop</span>
+                <span>Adobe Illustrator</span>
+                <span>Canva</span>
+            </div>
+        </div>
+        <div class="tool-category-card glass">
+            <h4>Video Editing & AR</h4>
+            <div class="tool-tags-list">
+                <span>CapCut</span>
+                <span>Wondershare Filmora</span>
+                <span>Snapchat Lens Studio</span>
+            </div>
+        </div>
+        <div class="tool-category-card glass">
+            <h4>SEO & Analytics Engines</h4>
+            <div class="tool-tags-list">
+                <span>Google Keyword Planner</span>
+                <span>SEMrush</span>
+                <span>Ahrefs</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-wrap">
+        <div class="contact-panel glass">
+            <h2>Let's Scale Your Business Metrics</h2>
+            <div class="badge">Fiverr Level 1 Seller | 4.5 Star Rated Professional Freelancer</div>
+            
+            <div class="social-matrix">
+                <a href="https://www.linkedin.com/in/zubairansari1/" target="_blank" rel="noopener" class="matrix-btn">LinkedIn</a>
+                <a href="https://www.instagram.com/fluentmediamarketing1/" target="_blank" rel="noopener" class="matrix-btn">Instagram</a>
+                <a href="https://www.facebook.com/fluentmediamarketing/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" rel="noopener" class="matrix-btn">Facebook</a>
+                <a href="https://www.fiverr.com/error_op6?public_mode=true" target="_blank" rel="noopener" class="matrix-btn">Fiverr</a>
+                <a href="https://www.upwork.com/freelancers/~01550320a84c1d5a2c?mp_source=share" target="_blank" rel="noopener" class="matrix-btn">Upwork</a>
+            </div>
+        </div>
+        <div class="form-panel glass">
+            <form id="ajax-contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="e9fc7781-d2c6-4307-8441-4afd6a603cb3">
+                <input type="hidden" name="subject" value="New Website Lead - Zubair Portfolio">
+                <input type="checkbox" name="botcheck" style="display: none;">
+
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email Address" required aria-label="Your Email Address">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="4" placeholder="Briefly describe your marketing or scaling goals..." required aria-label="Briefly describe your marketing or scaling goals"></textarea>
+                </div>
+                
+                <button type="submit" id="submit-btn" class="submit-btn">SEND INQUIRY</button>
+                <div id="form-result"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <span>📞 Phone / WhatsApp: <a href="https://wa.me/923184628170" id="whatsapp-link" target="_blank" rel="noopener" style="color:var(--blue); font-weight:700;">+92 3184628170</a></span>
+            <span>🌐 Main Agency Socials:</span>
+            <a href="https://www.linkedin.com/in/zubairansari1/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/fluentmediamarketing1/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/fluentmediamarketing/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.fiverr.com/error_op6?public_mode=true" target="_blank" rel="noopener">Fiverr</a>
+            <a href="https://www.upwork.com/freelancers/~01550320a84c1d5a2c?mp_source=share" target="_blank" rel="noopener">Upwork</a>
+        </div>
+        
+        <p class="footer-note"> Stop wasting budget on unoptimized ads. Let's engineer a data-driven customer acquisition workflow for your e-commerce platform and dominate the marketplace framework effectively. </p>
+        
+        <div class="footer-copyright">
+            © 2026 Zubair Jamil — Professional Digital Marketing & High-Conversion Social Media Management Specialist. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+function moveSlider(button, direction) {
+    const wrapper = button.closest('.slider-wrapper');
+    const container = wrapper.querySelector('.slider-container');
+    const slides = container.querySelectorAll('.slider-slide');
+    const totalSlides = slides.length;
+    
+    let currentIndex = parseInt(container.getAttribute('data-index') || '0');
+    currentIndex += direction;
+    
+    if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    } else if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    }
+    
+    container.setAttribute('data-index', currentIndex);
+    container.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// INSTANT LIGHTBOX FLOW (DELAY REMOVED)
+function openLightbox(slideElement) {
+    const imgSrc = slideElement.querySelector('img').src;
+    const lightbox = document.getElementById('portfolioLightbox');
+    const lightboxImg = document.getElementById('lightboxImage');
+    
+    // Pehle source assign hoga taake browser instantly load kare
+    lightboxImg.src = imgSrc;
+    
+    // Display flex ho kar opacity state active karega without engine lagging
+    lightbox.style.display = 'flex';
+    
+    setTimeout(() => {
+        lightbox.classList.add('active');
+    }, 1);
+    
+    document.body.style.overflow = 'hidden'; 
+}
+
+function closeLightbox(event) {
+    if (event.target.id === 'portfolioLightbox' || event.target.className === 'lightbox-close') {
+        const lightbox = document.getElementById('portfolioLightbox');
+        lightbox.classList.remove('active');
+        
+        // Modal instant gayab ho jayega window view se
+        setTimeout(() => {
+            lightbox.style.display = 'none';
+        }, 150);
+        
+        document.body.style.overflow = ''; 
+    }
+}
+
+let scrollTimeout;
+window.addEventListener('scroll', () => {
+    if (!scrollTimeout) {
+        scrollTimeout = setTimeout(() => {
+            const nav = document.querySelector('nav');
+            if(window.scrollY > 40) {
+                nav.style.background = 'rgba(5,8,17,.95)';
+            } else {
+                nav.style.background = 'rgba(5,8,17,.8)';
+            }
+            scrollTimeout = null;
+        }, 50);
+    }
+}, { passive: true });
+
+// ASYNC EMAIL SUBMISSION PROCESSOR
+const form = document.getElementById('ajax-contact-form');
+const result = document.getElementById('form-result');
+const button = document.getElementById('submit-btn');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    button.disabled = true;
+    button.innerText = "SENDING...";
+    result.style.display = "block";
+    result.className = "";
+    result.innerText = "Processing your inquiry...";
+
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: json
+    })
+    .then(async (response) => {
+        let res = await response.json();
+        if (response.status == 200) {
+            result.className = "success";
+            result.innerText = "Inquiry sent successfully! Zubair will contact you soon.";
+            form.reset();
+        } else {
+            result.className = "error";
+            result.innerText = res.message || "Submission failed. Please try again.";
+        }
+    })
+    .catch(error => {
+        result.className = "error";
+        result.innerText = "Network error. Please check your connection.";
+    })
+    .then(() => {
+        button.disabled = false;
+        button.innerText = "SEND INQUIRY";
+        setTimeout(() => {
+            result.style.display = "none";
+        }, 6000);
+    });
+});
+</script>
+
+</body>
+</html>
